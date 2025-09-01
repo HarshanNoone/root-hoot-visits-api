@@ -1,1 +1,1 @@
-export const VISITS_DATA = "Visitors information fetched successfully"
+export const VISITS_DATA = "Visitors information fetched successfully!"
