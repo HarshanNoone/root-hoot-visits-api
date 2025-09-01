@@ -9,7 +9,7 @@ const cors_1 = __importDefault(require("cors"));
 const app = (0, express_1.default)();
 const PORT = 3000;
 app.use((0, cors_1.default)({
-    origin: "http://localhost:5173" // your Vite frontend URL
+    origin: "https://root-hoot-frontend.vercel.app/" // your Vite frontend URL
 }));
 // Mock functions
 const getVisitors = () => [
@@ -46,8 +46,8 @@ app.get("/visits", (req, res) => {
     });
     // Sort by startDateTime
     result.sort((a, b) => a.startDateTime - b.startDateTime);
-    res.status(201).json({
-        status: 201,
+    res.status(200).json({
+        status: 200,
         message: message_1.VISITS_DATA,
         data: result
     });
