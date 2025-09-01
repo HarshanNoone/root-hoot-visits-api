@@ -9,7 +9,7 @@ const cors_1 = __importDefault(require("cors"));
 const app = (0, express_1.default)();
 const PORT = 3000;
 app.use((0, cors_1.default)({
-    origin: "https://root-hoot-frontend.vercel.app" // your Vite frontend URL
+    origin: "*",
 }));
 // Mock functions
 const getVisitors = () => [

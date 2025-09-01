@@ -4,9 +4,12 @@ import cors from "cors";
 
 const app = express();
 const PORT = 3000;
-app.use(cors({
-  origin: "https://root-hoot-frontend.vercel.app"   // your Vite frontend URL
-}));
+app.use(
+  cors({
+    origin: "*",
+  })
+);
+
 
 
 // Visitor + Visit Interfaces
